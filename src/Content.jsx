@@ -14,7 +14,7 @@ function Content() {
         <div className="container">
           <article>
             <ul>
-              <li>Creative Technologist — Making art in the digital and print worlds</li>
+              <li>Learning by building — ☆ Turning ideas into working things</li>
               <li>aaryaman1407@gmail.com</li>
               <li>
                 <a href="https://instagram.com/lord.m0untbatten" target="_blank" rel="noopener noreferrer">instagram.com/lord.m0untbatten</a>
@@ -27,11 +27,15 @@ function Content() {
             <hr />
             <article>
               <ul>
-                <li><a href="https://horsehabit.com/" target="_blank" rel="noopener noreferrer">Horse Habit</a> — Original ASCII art for 2026, the Year of the Horse</li>
-                <li><a href="https://ur-aura.com/" target="_blank" rel="noopener noreferrer">UR–AURA</a> — An digital aura photo booth and in-person experience. Visit a pop-up IRL to purchase your aura photo and companion guidebook</li>
-                <li><a href="https://skinsshark.github.io/yeet-hay" target="_blank" rel="noopener noreferrer">Yeet Hay or Yeet Nay?</a> — Bringing analog to digital in a new reading format.</li>
-                <li><a href="https://sushiaipod.vercel.app/" target="_blank" rel="noopener noreferrer">ai爱pod</a> — Photo gallery inspired by the iPod Classic.</li>
-                <li><a href="https://the-offisse.com/" target="_blank" rel="noopener noreferrer">The Offisse</a> — High-end fashion inspired by The Office (US)</li>
+                <li><a href="https://roommateapplications.vercel.app/" target="_blank" rel="noopener noreferrer">Roommate Compatibility System (RCS™)</a><span className="status-indicator status-built" title="Shipped / Built"></span> — A gamified full-stack roommate recruitment pipeline disguised as a brutalist alternate-reality game. Applicants go through a multi-stage behavioral and algorithmic vetting system that analyzes responses, extracts metadata (IP/location), scores candidates, stores results in a backend database, and automatically sends acceptance/rejection emails with a public leaderboard.</li>
+                <li><a href="https://in-dev.com/" target="_blank" rel="noopener noreferrer">Back to 2006</a><span className="status-indicator status-dev" title="In Development"></span> — A nostalgic web experience that recreates the internet aesthetic of the mid-2000s, exploring early web design patterns, layouts, and interactions. Designed as an interactive time capsule of the pre-social-media web.</li>
+                <li><a href="https://in-dev.com/" target="_blank" rel="noopener noreferrer">Open-Source Cortex</a><span className="status-indicator status-dev" title="In Development"></span> — idk</li>
+                <li><a href="https://subscripted.vercel.app/" target="_blank" rel="noopener noreferrer">Subscripted</a> <span className="status-indicator status-built" title="Shipped / Built"></span> — A smart subscription tracker that helps users understand where their money goes — monthly, yearly, and over a lifetime. It eliminates forgotten trials and surprise renewals by visualizing subscription costs and spending patterns.</li>
+                <li><a href="https://in-dev.com/" target="_blank" rel="noopener noreferrer">Windows 95 Simulation</a><span className="status-indicator status-dev" title="In Development"></span> — A browser-based recreation of the Windows 95 desktop environment, simulating classic UI components, window management, and system interactions directly in the browser.</li>
+                <li><a href="https://aaryaman-147.github.io/hand-gesture-particle-system/" target="_blank" rel="noopener noreferrer">3D Particle System</a><span className="status-indicator status-built" title="Shipped / Built"></span> — An interactive gesture-controlled particle simulation where users manipulate a particle field using hand movements captured via MediaPipe and rendered with Three.js.</li>
+                <li><a href="https://schedly-c3po.vercel.app/" target="_blank" rel="noopener noreferrer">Schedly</a><span className="status-indicator status-built" title="Shipped / Built"></span> — A unified academic scheduling platform designed so every student can see every class in one place, simplifying timetable management and schedule coordination.</li>
+                <li><a href="https://github.com/Aaryaman-147/mood-of-the-internet" target="_blank" rel="noopener noreferrer">Mood of the Internet</a><span className="status-indicator status-dev" title="In Development"></span> — An experimental web project that captures and visualizes the collective mood of the internet using sentiment signals and live data sources.</li>
+                <li><a href="https://github.com/Aaryaman-147/second-look" target="_blank" rel="noopener noreferrer">Second Look</a><span className="status-indicator status-built" title="Shipped / Built"></span> — A minimal Chrome extension that introduces a pause between impulse and intent, prompting users to reconsider actions before committing them.</li>
               </ul>
             </article>
           </section>
@@ -51,18 +55,17 @@ function Content() {
           </section>
 
           <section>
-            <h2>More Projects</h2>
+            <h2>Outside the Terminal</h2>
             <hr />
             <article>
               <ul>
-                <li><sup>2026</sup><a href="https://gray-area-foundation.myshopify.com/collections/whole-earth-redux" target="_blank" rel="noopener noreferrer">Whole Earth Redux</a> — A print publication offering new perspectives on the Whole Earth Catalog</li>
-                <li><sup>2024</sup><a href="https://metalabel.com/aiphabet" target="_blank" rel="noopener noreferrer">Aiphabet</a> — Free, printable zine created using Stable Diffusion</li>
-                <li><sup>2024</sup><a href="https://imscared.com/" target="_blank" rel="noopener noreferrer">Mom Come Pick Me Up, I'm Scared</a> — A tool to visualize your crowd at a public speaking event</li>
+                <li>Retro computing and operating system design</li>
+                <li>Creative coding and generative visuals</li>
+                <li>Biomedical sensing and wearable health technologies</li>
+                <li>Nostalgia-driven web design and early internet aesthetics</li>
+                <li>Building experimental side projects late at night</li>
               </ul>
             </article>
-            <div>
-              <p className="smaller">Full list available on <a href="https://github.com/skinsshark/skinsshark.github.io/blob/master/README.md" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-            </div>
           </section>
 
           <section>
@@ -80,7 +83,7 @@ function Content() {
             <hr />
             <article>
               <div>
-                <p>Visiting contemporary art museums, volunteering around the city, giving generous ratings on Letterboxd, running for utility but not for fun, playing Just Dance on Wii, trying to guess your zodiac sign, furniture shopping, white tea, and black coffee</p>
+                <p>Logging films on Letterboxd, good coffee and late-night conversations, Long walks with music, finding great cafés in new places and clean design and well-made objects.</p>
               </div>
             </article>
           </section>

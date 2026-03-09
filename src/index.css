@@ -199,6 +199,29 @@ footer {
   }
 }
 
+/* --- Project Status Indicators --- */
+
+.status-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Green glow for completed/shipped projects */
+.status-built {
+  background-color: #00ff41; /* bright terminal green */
+  box-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;
+}
+
+/* Orange/Amber glow for projects currently in development */
+.status-dev {
+  background-color: #ff9800; /* amber/orange */
+  box-shadow: 0 0 10px #ff9800, 0 0 20px #ff9800;
+}
+
 /* --- The Print Easter Egg --- */
 
 @page {
