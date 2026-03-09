@@ -39,7 +39,8 @@ This project explores the idea of bridging digital and physical design by allowi
 ---
 ### Inspiration
 
-This project is inspired by the cube portfolio concept created by **Sharon Zheng**.
+This project is inspired by the cube portfolio concept created by **Sharon Zheng's** cube portfolio: https://sharonzheng.com
+
 Her portfolio explores the idea of navigating through the faces of a cube and 
 connecting digital experiences with a physical printable cube net.
 
