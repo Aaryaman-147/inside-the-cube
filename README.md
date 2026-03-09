@@ -1,10 +1,10 @@
 # Inside the Cube
 
-An experimental portfolio interface where users scroll through the interior faces of a cube.
+An experimental portfolio interface where users scroll through the **interior faces of a cube**.
 
 Instead of displaying a 3D cube object, the experience places the user *inside* the cube and rotates between its faces as they scroll.
 
-The project also includes a print stylesheet that unfolds the cube into a printable cube net, allowing the portfolio to exist as a physical object.
+The project also includes a **print stylesheet** that unfolds the cube into a **printable cube net**, allowing the portfolio to exist as a physical object.
 
 ---
 
