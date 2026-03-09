@@ -30,3 +30,14 @@ Physical experience:
 - Cut and fold to create a physical cube portfolio
 
 ---
+## Motivation
+
+Most portfolios exist only in the browser.
+
+This project explores the idea of bridging digital and physical design by allowing the portfolio to be printed and assembled as a real object.
+
+---
+
+## License
+
+MIT License
