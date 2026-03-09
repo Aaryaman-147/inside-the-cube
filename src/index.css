@@ -1,0 +1,283 @@
+:root {
+  --main-bg-color: #1700c7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- 3D Fold Mechanics --- */
+
+.app-all {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.wrapper-3d {
+  perspective: 20vw;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.fold {
+  height: 80vh;
+  overflow: hidden;
+  width: 80vw;
+}
+
+.fold-align {
+  height: 100%;
+  width: 100%;
+}
+
+/* Offset the content inside the top and bottom folds so it aligns continuously */
+.fold-top .fold-align {
+  transform: translateY(100%);
+}
+
+.fold-bottom .fold-align {
+  transform: translateY(-100%);
+}
+
+/* Apply the actual 3D hinges */
+.fold-top {
+  transform: rotateX(-90deg);
+  transform-origin: bottom center;
+}
+
+.fold-bottom {
+  transform: rotateX(90deg);
+  transform-origin: top center;
+}
+
+/* Mobile responsiveness for the folds */
+@media only screen and (max-width: 767px) {
+  .fold-top {
+    transform: rotateX(-140deg);
+  }
+  .fold-bottom {
+    transform: rotateX(140deg);
+  }
+}
+
+/* --- Typography and Layout --- */
+
+a {
+  color: #fff;
+}
+
+/* Custom cursor style for links */
+.secret-link, a {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDE3MiAxNzIiIHN0eWxlPSJmaWxsOiMwMDAiPjxnIGZpbGw9Im5vbmUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6bm9ybWFsIj48cGF0aCBkPSJNMCAxNzJWMGgxNzJ2MTcyeiIvPjxwYXRoIGQ9Ik05Ni43NSAyNi44NzV2MTAuNzVoMjkuODk4bC02Ni4wMTEgNjYuMDEyIDcuNzI2IDcuNzI2IDY2LjAxMi02Ni4wMTFWNzUuMjVoMTAuNzVWMjYuODc1em0tNjkuODc1IDIxLjV2OTYuNzVoOTYuNzVWNzUuMjVMMTEyLjg3NSA4NnY0OC4zNzVoLTc1LjI1di03NS4yNUg4NmwxMC43NS0xMC43NXoiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+) 100% no-repeat;
+  background-size: 14px;
+  padding-right: 16px;
+}
+
+h3 a {
+  background-size: 16px;
+  padding-right: 18px;
+}
+
+hr {
+  border: 0.5px solid #fff;
+}
+
+header {
+  height: 88vh;
+  position: relative;
+  width: auto;
+}
+
+br {
+  display: none;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h1 {
+  bottom: 0;
+  left: 0;
+  letter-spacing: 1px;
+  position: absolute;
+  text-transform: uppercase;
+  word-spacing: 28px;
+}
+
+h1 span {
+  border-bottom: 5px solid #fff;
+  padding-bottom: 2px;
+}
+
+h2 {
+  margin-top: 120px;
+}
+
+h3 {
+  margin-bottom: 3px;
+}
+
+h4 {
+  margin-bottom: 15px;
+}
+
+h4:before { content: "("; }
+h4:after { content: ")"; }
+
+ul {
+  list-style-type: square;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+ul li {
+  margin: 5px 0 5px -15px;
+}
+
+section ul li {
+  margin-bottom: 20px;
+}
+
+ul li sup {
+  font-size: 0.6em;
+  margin-right: 8px;
+}
+
+header, section {
+  margin-bottom: 50px;
+}
+
+section ul {
+  margin-top: 10px;
+}
+
+.smaller {
+  font-size: 0.8em;
+}
+
+footer {
+  margin: 100px 0 200px;
+  padding-bottom: 300px;
+}
+
+/* Mobile Adjustments */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 0.9rem;
+  }
+  header {
+    height: 40vh;
+  }
+  br {
+    display: block;
+  }
+  h1 {
+    word-spacing: 18px;
+  }
+  h1 span {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+  }
+  footer {
+    padding-bottom: 100px;
+  }
+}
+
+/* --- The Print Easter Egg --- */
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+.print-background-image {
+  display: none;
+  width: 100%;
+}
+
+@media print {
+  body, html {
+    background: #fff !important;
+    height: 11in !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    width: 8.5in;
+  }
+
+  /* Flatten the 3D folds so the browser doesn't try to print an angled div */
+  .app-all {
+    align-items: normal;
+    display: block;
+    height: auto;
+    justify-content: normal;
+    position: static;
+    width: auto;
+  }
+
+  .wrapper-3d {
+    perspective: none;
+    transform: none;
+  }
+
+  /* Hide the top and bottom folds entirely so we don't print duplicates */
+  .fold-top, .fold-bottom {
+    display: none;
+  }
+
+  .fold {
+    height: auto;
+    overflow: visible;
+    width: auto;
+  }
+
+  [data-fold-content="true"] {
+    transform: none !important;
+  }
+
+  /* Hide the text content */
+  .print-content {
+    display: none;
+  }
+
+  /* Reveal the hidden Easter Egg image */
+  .print-page {
+    break-after: auto;
+    height: 11in;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    page-break-after: auto;
+    width: 8.5in;
+  }
+
+  .print-background-image {
+    border: 0;
+    display: block;
+    height: 100%;
+    inset: 0;
+    object-fit: cover;
+    object-position: top center;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+}
