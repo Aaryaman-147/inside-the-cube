@@ -37,7 +37,11 @@ Most portfolios exist only in the browser.
 This project explores the idea of bridging digital and physical design by allowing the portfolio to be printed and assembled as a real object.
 
 ---
+### Inspiration
 
+This project is inspired by the cube portfolio concept created by **Sharon Zheng**.
+
+---
 ## License
 
 MIT License
