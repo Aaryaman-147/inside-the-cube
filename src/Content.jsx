@@ -1,4 +1,5 @@
 import { useState, useEffect, React } from 'react';
+import Loader from './Loader';
 
 function Content() {
   // --- Retro Boot Screen Logic ---
@@ -24,6 +25,7 @@ function Content() {
 
   // State to hold the currently typed portion
   const [displayedText, setDisplayedText] = useState('');
+  const [isTypingDone, setIsTypingDone] = useState(false);
 
   useEffect(() => {
     let currentIndex = 0;
@@ -36,6 +38,7 @@ function Content() {
       // Stop the timer when all text is typed
       if (currentIndex > fullText.length) {
         clearInterval(timer);
+        setIsTypingDone(true);
       }
     }, typingSpeed);
 
@@ -60,8 +63,18 @@ function Content() {
               </p>
             ))}
           </div>
-          <h1>
-            <span>Aaryaman Arora</span></h1>
+
+          {/* This block ONLY appears after the typing is finished */}
+          {isTypingDone && (
+            <h1 style={{ display: 'flex', alignItems: 'center', gap: '30px' }}>
+              <span>Aaryaman Arora</span>
+              
+              {/* Wrapping the Loader to scale it down so it matches your font size */}
+              <div style={{ transform: 'scale(0.5)', transformOrigin: 'left center', marginTop: '-40px' }}>
+                <Loader />
+              </div>
+            </h1>
+          )}
         </header>
 
         <div className="container">
