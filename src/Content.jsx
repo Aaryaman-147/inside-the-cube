@@ -188,6 +188,12 @@ function Content() {
             <ul>
               <li><a href="https://linkedin.com/in/aaryaman-arora" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
+            {/* The Attribution */}
+            <div style={{ marginTop: '60px' }}>
+              <p className="smaller">
+                Design and 3D architecture inspired by <a href="https://sharonzheng.com" target="_blank" rel="noopener noreferrer">Sharon Zheng</a>.
+              </p>
+            </div>
           </footer>
         </div>
       </div>
