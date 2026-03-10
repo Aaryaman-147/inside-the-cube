@@ -4,11 +4,12 @@ function Content() {
   return (
     <main className="print-page">
       {/* This image is hidden until the user tries to print the page */}
-      <img className="print-background-image" src="/cube.svg" alt="Printable website" aria-hidden="true" />
+
       
       <div className="print-content">
         <header>
-          <h1><span>Aaryaman Arora</span></h1>
+          <h1>
+            <span>Aaryaman Arora</span></h1>
         </header>
 
         <div className="container">

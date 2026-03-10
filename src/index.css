@@ -294,85 +294,36 @@ footer {
   transition: width 0.5s ease;
 }
 
-/* --- The Print Easter Egg --- */
-
-@page {
-  size: letter;
-  margin: 0;
-}
-
-.print-background-image {
-  display: none;
-  width: 100%;
-}
+/* --- The Pure CSS Print Easter Egg --- */
 
 @media print {
-  body, html {
-    background: #fff !important;
-    height: 11in !important;
+  /* 1. Hide the entire React application so it doesn't print */
+  #root {
+    display: none !important;
+  }
+
+  /* 2. Force the body to become your PNG image */
+  body {
+    background-color: #fff !important;
+    background-image: url('/cube.png') !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    
+    /* These lines force the browser to print your background image */
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    
     margin: 0 !important;
-    overflow: visible !important;
     padding: 0 !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-    width: 8.5in;
+    height: 100vh !important;
+    width: 100vw !important;
   }
 
-  /* Flatten the 3D folds so the browser doesn't try to print an angled div */
-  .app-all {
-    align-items: normal;
-    display: block;
-    height: auto;
-    justify-content: normal;
-    position: static;
-    width: auto;
-  }
-
-  .wrapper-3d {
-    perspective: none;
-    transform: none;
-  }
-
-  /* Hide the top and bottom folds entirely so we don't print duplicates */
-  .fold-top, .fold-bottom {
-    display: none;
-  }
-
-  .fold {
-    height: auto;
-    overflow: visible;
-    width: auto;
-  }
-
-  [data-fold-content="true"] {
-    transform: none !important;
-  }
-
-  /* Hide the text content */
-  .print-content {
-    display: none;
-  }
-
-  /* Reveal the hidden Easter Egg image */
-  .print-page {
-    break-after: auto;
-    height: 11in;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    page-break-after: auto;
-    width: 8.5in;
-  }
-
-  .print-background-image {
-    border: 0;
-    display: block;
-    height: 100%;
-    inset: 0;
-    object-fit: cover;
-    object-position: top center;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
+  /* 3. Strip out the default browser headers and footers (date, URL, etc.) */
+  @page {
+    margin: 0; 
+    size: auto;
   }
 }
