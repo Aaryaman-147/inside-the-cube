@@ -1,5 +1,6 @@
 import { useState, useEffect, React } from 'react';
 import Loader from './Loader';
+import CubeSpinner from './CubeSpinner';
 
 function Content() {
   // --- Retro Boot Screen Logic ---
@@ -250,7 +251,16 @@ function Content() {
 
           <footer>
             <p>☆</p>
-            <p>Happy to chat, reach out!</p>
+            {/* Flexbox wrapper to align text and spinner side-by-side */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+            <p style={{ margin: 0 }}>Happy to chat, reach out!</p>
+            
+            {/* Adjusted the scale up so the new detailed cube is clearly visible */}
+            <div style={{ transform: 'scale(0.8)', transformOrigin: 'left center' }}>
+              <CubeSpinner />
+            </div>
+          </div>
+            
             <ul>
               <li><a href="https://linkedin.com/in/aaryaman-arora" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
