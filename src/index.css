@@ -294,6 +294,43 @@ footer {
   transition: width 0.5s ease;
 }
 
+/* --- Retro Boot Screen (BSOD) --- */
+
+.retro-boot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 88vh; /* Keeps it perfectly contained in your top 3D fold */
+  padding: 0 20px;
+}
+
+.bsod-container p {
+  font-family: 'Courier New', Courier, monospace !important; /* Forces the terminal look */
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: none; /* Prevents other CSS from making it all uppercase */
+}
+
+/* The Blinking Terminal Cursor */
+.blinking-cursor {
+  animation: blink-animation 1s step-end infinite;
+}
+
+@keyframes blink-animation {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Mobile adjustments so the text doesn't break weirdly on phones */
+@media only screen and (max-width: 767px) {
+  .bsod-container p {
+    font-size: 1rem;
+  }
+}
+
 /* --- The Pure CSS Print Easter Egg --- */
 
 @media print {

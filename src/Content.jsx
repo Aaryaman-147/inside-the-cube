@@ -1,13 +1,65 @@
-import React from 'react';
+import { useState, useEffect, React } from 'react';
 
 function Content() {
+  // --- Retro Boot Screen Logic ---
+  const bootLines = [
+    "A problem has been detected and",
+    "reality has been suspended.",
+    "",
+    "PORTFOLIO_LOAD_SUCCESSFUL",
+    "",
+    "If this is the first time you've",
+    "seen this screen,",
+    "scroll down to initialize the",
+    "environment.",
+    "",
+    "*** STOP: 0x0000000A",
+    "(AARYAMAN_OS, DEV_ENV, CREATIVE_CODE)",
+    "",
+    "Awaiting user input"
+  ];
+  
+  // Join the array into a single string with line breaks
+  const fullText = bootLines.join('\n');
+
+  // State to hold the currently typed portion
+  const [displayedText, setDisplayedText] = useState('');
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingSpeed = 30; // 20ms per character. Lower = faster!
+
+    const timer = setInterval(() => {
+      setDisplayedText(fullText.slice(0, currentIndex));
+      currentIndex++;
+
+      // Stop the timer when all text is typed
+      if (currentIndex > fullText.length) {
+        clearInterval(timer);
+      }
+    }, typingSpeed);
+
+    // Cleanup interval on unmount
+    return () => clearInterval(timer);
+  }, []);
   return (
     <main className="print-page">
       {/* This image is hidden until the user tries to print the page */}
 
       
       <div className="print-content">
-        <header>
+        <header className="retro-boot">
+          <div className="bsod-container">
+            {displayedText.split('\n').map((line, index, array) => (
+              <p key={index}>
+                {/* Print a non-breaking space if the line is empty to preserve spacing */}
+                {line === '' ? '\u00A0' : line}
+                
+                {/* Only show the cursor at the end of the absolute last line being typed */}
+                {index === array.length - 1 && <span className="blinking-cursor">_</span>}
+              </p>
+            ))}
+          </div>
           <h1>
             <span>Aaryaman Arora</span></h1>
         </header>
