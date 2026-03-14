@@ -342,7 +342,7 @@ footer {
   /* 2. Force the body to become your PNG image */
   body {
     background-color: #fff !important;
-    background-image: url('/cube.png') !important;
+    background-image: url('/aaryaman.svg') !important;
     background-size: contain !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -363,4 +363,6 @@ footer {
     margin: 0; 
     size: auto;
   }
+
+  
 }

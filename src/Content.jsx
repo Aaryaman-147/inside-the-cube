@@ -1,6 +1,7 @@
 import { useState, useEffect, React } from 'react';
 import Loader from './Loader';
 import CubeSpinner from './CubeSpinner';
+import IsometricGrid from './IsometricGrid';
 
 function Content() {
   // --- Retro Boot Screen Logic ---
@@ -27,6 +28,7 @@ function Content() {
   // State to hold the currently typed portion
   const [displayedText, setDisplayedText] = useState('');
   const [isTypingDone, setIsTypingDone] = useState(false);
+  const [showSecretArea, setShowSecretArea] = useState(false);
 
   useEffect(() => {
     let currentIndex = 0;
@@ -250,7 +252,25 @@ function Content() {
           </section>
 
           <footer>
-            <p>☆</p>
+            {/* The Hidden Trigger */}
+          <p 
+            onClick={() => setShowSecretArea(!showSecretArea)} 
+            style={{ 
+              cursor: 'pointer', 
+              display: 'inline-block',
+              transition: 'transform 0.3s ease'
+            }}
+            title="Initialize secret sequence"
+          >
+            ☆
+          </p>
+
+          {/* The Hidden Area Reveal */}
+          {showSecretArea && (
+            <div style={{ animation: 'fadeIn 1s forwards' }}>
+              <IsometricGrid />
+            </div>
+          )}
             {/* Flexbox wrapper to align text and spinner side-by-side */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
             <p style={{ margin: 0 }}>Happy to chat, reach out!</p>
