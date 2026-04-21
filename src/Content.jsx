@@ -96,7 +96,51 @@ function Content() {
             <hr />
             <article>
               <ul>
-                <li className="project-item"><a href="https://roommateapplications.vercel.app/" target="_blank" rel="noopener noreferrer">Roommate Compatibility System (RCS™)</a><span className="status-indicator status-built" title="Shipped / Built"></span> — A gamified full-stack roommate recruitment pipeline disguised as a brutalist alternate-reality game. Applicants go through a multi-stage behavioral and algorithmic vetting system that analyzes responses, extracts metadata (IP/location), scores candidates, stores results in a backend database, and automatically sends acceptance/rejection emails with a public leaderboard.
+                <li className="project-item"><a href="https://bio-cuda-latent-space-engine.vercel.app/" target="_blank" rel="noopener noreferrer">BioCUDA - GPU: Accelerated Protein Language Modeling for Proteomic Analysis</a><span className="status-indicator status-built" title="Shipped / Built"></span> — BioCUDA is a specialized bioinformatics platform designed to bridge the gap between deep learning and proteomic research. By leveraging Meta’s ESM-2 (Evolutionary Scale Modeling), the platform treats protein sequences like a language, predicting structural properties and functional motifs with high precision. The system is engineered to offload heavy transformer-based computations to NVIDIA GPU clusters, providing a real-time, visual interface for complex biological sequence analysis.
+                {/* The Hover Card */}
+                  <div className="project-preview">
+                    <div className="tech-stack">
+                      <span className="tech-badge">PyTorch</span>
+                      <span className="tech-badge">CUDA</span>
+                      <span className="tech-badge">FastAPI</span>
+                      <span className="tech-badge">Python</span>
+                      <span className="tech-badge">React</span>
+                      <span className="tech-badge">Tailwind CSS</span>
+                    </div>
+                    </div>
+                    </li>
+
+                    <li className="project-item"><a href="https://network-intrusion-mlops.onrender.com/" target="_blank" rel="noopener noreferrer">End-to-End Network Intrusion Detection & Automated Lifecycle</a><span className="status-indicator status-built" title="Shipped / Built"></span> — A production-ready MLOps pipeline designed to detect and classify network threats in real-time. This project goes beyond model accuracy, focusing on the automation of the machine learning lifecycle—from data ingestion and experiment tracking to containerized deployment and performance monitoring.
+                {/* The Hover Card */}
+                  <div className="project-preview">
+                    <div className="tech-stack">
+                      <span className="tech-badge">Apache Airflow</span>
+                      <span className="tech-badge">MLflow</span>
+                      <span className="tech-badge">Python</span>
+                      <span className="tech-badge">Scikit-Learn</span>
+                      <span className="tech-badge">FastAPI</span>
+                      <span className="tech-badge">Streamlit</span>
+                      <span className="tech-badge">Grafana</span>
+                      <span className="tech-badge">Docker</span>
+                    </div>
+                    </div>
+                    </li>
+
+                    <li className="project-item"><a href="https://healthassist-ai.vercel.app/" target="_blank" rel="noopener noreferrer">HealthAssist.ai : Clinical Triage & Risk Assessment Platform</a><span className="status-indicator status-built" title="Shipped / Built"></span> — An AI-driven clinical assistant that transforms patient symptoms into structured, risk-prioritized assessments. Built with a "Safety-First" architecture to ensure every recommendation is grounded in clinical protocols and protected by semantic guardrails.
+                {/* The Hover Card */}
+                  <div className="project-preview">
+                    <div className="tech-stack">
+                      <span className="tech-badge">Tailwind CSS</span>
+                      <span className="tech-badge">Python</span>
+                      <span className="tech-badge">FastAPI</span>
+                      <span className="tech-badge">OpenRouter</span>
+                      <span className="tech-badge">RAG</span>
+                      <span className="tech-badge">Next.js</span>
+                    </div>
+                    </div>
+                    </li>
+                    
+                    <li className="project-item"><a href="https://roommateapplications.vercel.app/" target="_blank" rel="noopener noreferrer">Roommate Compatibility System (RCS™)</a><span className="status-indicator status-built" title="Shipped / Built"></span> — A gamified full-stack roommate recruitment pipeline disguised as a brutalist alternate-reality game. Applicants go through a multi-stage behavioral and algorithmic vetting system that analyzes responses, extracts metadata (IP/location), scores candidates, stores results in a backend database, and automatically sends acceptance/rejection emails with a public leaderboard.
                 {/* The Hover Card */}
                   <div className="project-preview">
                     <div className="tech-stack">
@@ -108,6 +152,7 @@ function Content() {
                     </div>
                     </div>
                     </li>
+
                 <li className="project-item"><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">Back to 2006</a><span className="status-indicator status-dev" title="In Development"></span> — A nostalgic web experience that recreates the internet aesthetic of the mid-2000s, exploring early web design patterns, layouts, and interactions. Designed as an interactive time capsule of the pre-social-media web.
                 {/* The Progress Bar (Set width to your current progress) */}
                   <div className="progress-container">
