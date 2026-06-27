@@ -86,10 +86,31 @@ function Content() {
               <li>Learning by building — ☆ Turning ideas into working things</li>
               <li>aaryaman1407@gmail.com</li>
               <li>
-                <a href="https://instagram.com/lord.m0untbatten" target="_blank" rel="noopener noreferrer">instagram.com/lord.m0untbatten</a>
+                <a href="https://instagram.com/ireallywant2stayatyourhouse_" target="_blank" rel="noopener noreferrer">instagram.com/lord.m0untbatten</a>
               </li>
             </ul>
           </article>
+
+          <section>
+            <h2>Experience</h2>
+            <hr />
+            <article>
+              <div>
+                <h4>PDL-DSP Intern — <br />Premas Biotech</h4>
+                <ul>
+  <li><strong>May 2026 – June 2026</strong></li>
+  <li>Contributed to downstream process development for recombinant proteins and biologics.</li>
+  <li>Developed an AI-assisted platform to recommend chromatography workflows from protein sequence data.</li>
+  <li>Automated sequence analysis by integrating physicochemical properties to support purification strategy selection.</li>
+  <li>Collaborated with scientists to translate laboratory workflows into practical software tools.</li>
+  <li>Gained exposure to industrial bioprocess development, quality systems, and cross-functional R&D workflows.</li>
+</ul>
+              </div>
+              
+              {/* You can copy the <div> above and paste it here for future roles */}
+              
+            </article>
+          </section>
 
           <section>
             <h2>Project Shortlist</h2>
